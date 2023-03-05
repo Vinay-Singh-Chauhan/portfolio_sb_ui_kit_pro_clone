@@ -1,0 +1,409 @@
+*{
+  margin: 0;
+  padding: 0;
+
+}
+:root{
+  --primary:#0061f2;
+  --secondary:#6900c7;
+  --danger:#e81500;
+  --success:#00ac69;
+  --warning:#f4a100;
+  --info:#00cfd5;
+  
+}
+.bg-primary{
+  background-color: var(--primary) !important;
+}
+.row{
+  margin-left: 0;
+  margin-right: 0;
+}
+body{
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.dropdown-menu{
+  min-width: 10rem;
+
+}
+.avatar img{
+  width: auto;
+  height: 280px;
+}
+.curve{
+  height: 50px;
+}
+.welcome svg{
+  
+  background-size: contain;
+  color: #f2f6fc;
+  
+}
+.bg-red{
+  background-color: red;
+}
+.bg-blue{
+  background-color: blue;
+}
+.bg-orangered{
+  background-color: orangered;
+}
+.bg-green{
+  background-color: green;
+}
+.bg-yellow{
+  background-color: rgb(220, 177, 22);
+}
+.circle{
+  height: 70px;
+  width: 70px;
+}
+
+.features .svg2{
+  color:white;
+  background-color: #f2f6fc;
+}
+.bcolor2{
+  background-color: #f2f6fc;
+}
+.tcolor2{
+  background-color: #fff;
+  color: #f2f6fc;
+}
+
+
+.bgc2{
+  background-color: #f2f6fc;
+}
+
+footer ul{
+  list-style-type: none;
+}
+
+.grid .img {
+  background-repeat: no-repeat;
+  background-size:contain;
+}
+.grid .row{
+  padding: 0;
+  margin: 0;
+}
+
+.overlay-blue{
+  background: linear-gradient(to top,var(--primary), #3d17e3ba), url("dropimg.jpg") no-repeat top center;
+  background-size: cover; /* background-color: blue; */
+  /* mix-blend-mode: multiply; */
+}
+
+
+
+.width-min-content{
+  width: fit-content;
+}
+.dropdown-menu ul{
+  list-style-type: none;
+}
+.dropdown-menu {
+  min-width: 640px;
+}
+.drop2 {
+  min-width: 10rem;
+}
+
+
+.customizer{
+  display: block !important;
+  visibility:visible;
+  position: absolute;
+  width: fit-content;
+  
+  top:5rem;
+  /* right: 0; */
+  left: -3rem;
+  
+}
+.colorswatch{
+  height: 4rem;
+  padding: 0.1rem;
+}
+/* .colorswatch input{
+  border-radius: 25%;
+} */
+.color{
+  height: 3.5rem;
+}
+.color  input{
+
+  position: relative;
+  top: -45%;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  cursor: pointer;
+
+}
+.bg-secondary{
+background-color:var(--secondary) !important;
+
+}
+
+.bg-success{
+  background-color: var(--success) !important;
+}
+
+.bg-danger{
+  background-color: var(--danger) !important;
+}
+.bg-warning{
+  background-color: var(--warning) !important;
+}
+.bg-info{
+  background-color:var(--info) !important;
+}
+.h64px{
+  height: 3.5rem;
+  border-top-left-radius: 5%;
+}
+
+
+.image{
+  background-image: url(1.jpeg);
+}
+.image::before{
+  content: "Books";
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  color: white;
+  font-weight: 400;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--primary);
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  transition-timing-function: ease-in-out;
+  transition-duration: 0.5s;
+}
+@keyframes fade {
+  0%{
+    opacity: 0;
+  }
+  
+100%{
+  opacity: 0.8;
+}
+}
+.card:hover .image::before{
+  opacity:0.8;
+}
+
+
+.menu-head{
+  color: var(--primary);
+  font-weight: 700;
+}
+
+
+.sub{
+  color: gray;
+}
+/* .menu-svg-back::before{
+
+  background-color: var(--primary);
+  opacity: 0.5;
+  
+} */
+
+/* .offcanvas::before{
+  display: block !important;
+  visibility:visible;
+  position: relative;
+  width: fit-content;
+  content: "hello";
+
+  left: -10rem;
+} */
+.menu-svg{
+
+ opacity: 1;
+  color:var(--primary);
+  
+  
+}
+
+/* .menu-svg svg{
+  color: var(--primary);
+} */
+
+/* .colortext{
+  display: inline;
+  position: relative;
+  top: -100%;
+  z-index: 12;
+} */
+
+
+@media (min-width:991px) {
+
+  .pos-fl{
+  position:absolute  !important;
+  top: 100% !important;
+  /* left: 10% !important; */
+  }
+  /* .dropdown-menu{
+    width: 640px;
+  } */
+  
+}
+@media(max-width:991px){
+  
+  .change{
+    display: none;
+  }
+  footer{
+    align-items: center;
+  }
+  .title{
+    align-items: start;
+    width: 100%;
+    padding: 10%;
+  }
+  .fitem{
+    width: 40%;
+  }
+  .md-menu{
+    display: flex;
+    flex-direction: column;
+  }
+  
+}
+
+@media(max-width:760px) {
+  .grid{
+    width: 80vw;
+    margin: auto;
+  }
+  .grid div{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    
+    /* width:80vh; */
+  }
+  .grid .row div .row{
+
+    height:fit-content!important;
+    margin-bottom: 15px !important;
+  }
+  .grid .row div{
+    height: fit-content;
+    justify-content: space-evenly !important;
+    /* al */
+    width: 100% !important;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-bottom: 5px;
+
+  }
+  .contact .row{
+    /* justify-content: space-evenly !important; */
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .contact .row .card {
+    padding: auto;
+    width: 40% !important;
+  }
+
+  .title div{
+    text-align:start;
+  }
+  .title{
+    padding-left: 10px !important;
+
+  }
+  .icons {
+    width: 100%;
+    justify-content: start;
+
+  }
+
+  .fitem{
+    /* padding: 0 !important; */
+    /* margin: 0; */
+    align-items: start !important;
+    width: 100%;
+  }
+  .dropdown-menu{
+    min-width: 10rem;
+  }
+}
+/* .pos-par{
+  position: relative;
+} */
+
+
+@media (max-width:480px) {
+  .contact .row{
+    display: flex;
+
+  }
+  .email{
+    width: fit-content !important;
+  }
+  .number{
+    flex-shrink: 2;
+  }
+}
+
+@media (max-width:420px) {
+  .contact .row{
+    display: flex !important;
+    align-items: center;
+    flex-direction: column !important;
+    
+  }
+  .contact .row .card{
+    width: 80vw !important;
+
+
+  }
+}
+.gearrotate{
+  animation-name: rotateit;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-play-state: running;
+
+
+}
+@keyframes rotateit {
+  from{
+    transform:rotate(0deg);
+  }
+  to{
+    transform:rotate(359deg);
+  }
+}
+
+
+.offcanvas-body::-webkit-scrollbar {
+  width: 5px;               /* width of the entire scrollbar */
+}
+
+.offcanvas-body::-webkit-scrollbar-track {
+  background: white;        /* color of the tracking area */
+}
+
+.offcanvas-body::-webkit-scrollbar-thumb {
+  background-color: rgb(207, 207, 207); 
+  border-radius: 5px;  
+}
